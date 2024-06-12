@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Landing Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="/media/favicon.png">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><img src="media/logo.png" alt=""></a>
+        <ul class="navigation">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">TV Shows</a></li>
+            <li><a href="#">Movies</a></li>
+            <li><a href="#">Latest</a></li>
+            <li><a href="#">My List</a></li>
+        </ul>
+        <div class="search">
+            <input type="text" placeholder="Search">
+            <i class="fa fa-search" aria-hidden="true"></i>
+        </div>
+    </header>
+    <div class="banner">
+        <img src="media/bg.jpg" alt="Movie Picture" class="bg">
+        <div class="content">
+            <img src="media/name.png" alt="Movie Title" class="movieTitle">
+            <h4>
+                <span>2023</span>
+                <span><i>17+</i></span>
+                <span>1 Season</span>
+                <span>Action</span>
+            </h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga dolore sequi voluptates et voluptas illum voluptatem, autem praesentium unde alias culpa deserunt! Eos et sint, ducimus quam delectus sunt natus! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis eveniet nobis accusantium voluptate, neque amet perferendis, et expedita dolor nostrum alias dolorum nemo earum rem rerum delectus facere, soluta sapiente.</p>
+            <div class="buttons">
+                <a href="#"><i class="fa-solid fa-play"></i>Play</a>
+                <a href="#"><i class="fa-solid fa-plus"></i>My List</a>
+            </div>
+        </div>
+        <a href="#" class="play" onclick="toggleVideo();"><img src="media/play.png" alt="Play Button">Watch Trailer</a>
+    </div>
+
+    <div class="trailer">
+        <video src="media/trailer.mp4" controls="true" autoplay="true"></video>
+        <img src="media/close.png" class="close" onclick="toggleVideo();">
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
